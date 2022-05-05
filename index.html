@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design slide menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h4>AGE <br>
+                &nbsp;&nbsp;NCY</h4>
+            <img src="menu.png" onclick="openmenu()">
+        </div>
+        <div class="hero">
+            <h5>CREATIVE AGENCY</h5>
+            <h2>We Build Your Digital Appearance</h2> 
+            <p>Creating a successful digital platform solution for your business</p>
+        </div>
+        <div class="menu-box" id="menu">
+            <img src="close.png" onclick="closemenu()">
+            <div class="menu-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Pages</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let menu = document.getElementById('menu')
+
+        function closemenu(){
+            // console.log('hello')
+            menu.style.left = "-100%";
+        }
+        function openmenu(){
+           
+            menu.style.left = "0";
+            console.log(menu)
+        }
+
+    </script>
+</body>
+</html>
